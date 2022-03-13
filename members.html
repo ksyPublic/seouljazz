@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <title>서울재즈페스티벌</title>
+    <meta property="description" content="" />
+    <meta name="Referrer" content="origin" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes"
+    />
+    <meta name="apple-mobile-web-app-title" content="" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+  </head>
+
+  <body>
+    <script>
+      var state = 0;
+
+      function ChangeImage() {
+        if (state == 0) {
+          document.getElementById("image").src =
+            "./images/Members/Login_pages.jpg";
+          state = 1;
+        } 
+        // else {
+        //   document.getElementById("image").src =
+        //     "./images/suv/suv_cus03.jpg";
+        //   state = 0;
+        // }
+      }
+    </script>
+    <div style="width:100%; margin:0 auto; text-align:center;">
+      <div style="cursor: pointer">
+        <img
+          id="image"
+          onclick="ChangeImage();"
+          src="./images/Members/Login_pages.jpg"
+          alt="로그인페이지"
+        />
+      </div>
+    </div>
+  </body>
+</html>

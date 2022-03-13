@@ -1,0 +1,310 @@
+/*header 예외*/
+.pat3 {
+    padding-top:3px;
+}
+.ly-header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 99;
+}
+
+.ly-header .ly-hd-members {
+  display: block;
+  padding: 0 50px;
+  height: 30px;
+}
+
+.ly-header .ly-hd-members ul {
+  text-align: right;
+  font-size: 12px;
+}
+
+.ly-header .ly-hd-members ul li {
+  text-align: left;
+  display: inline-block;
+  margin: 8px 2px;
+}
+
+.ly-header .ly-hd-members ul li a {
+  color: #747474;
+}
+
+.ly-header .ly-hd-members ul li a:hover {
+  color: #fff;
+}
+
+.ly-header .ly-hd-members ul li:nth-child(4)::after,
+.ly-header .ly-hd-members ul li:nth-child(5)::after,
+.ly-header .ly-hd-members ul li:nth-child(6)::after,
+.ly-header .ly-hd-members ul li:nth-child(7)::after {
+  border: none;
+  margin: 0;
+}
+
+.ly-header .ly-hd-members ul li::after {
+  content: "";
+  display: inline-block;
+  border-color: #3c3b43;
+  border-style: solid;
+  border-width: 0.5px;
+  margin-left: 5px;
+  height: 9px;
+}
+
+/*sjf-login*/
+.sjf-login-wrap {
+  background: #1c1b23;
+  width: 100%;
+  height: 100vh;
+  padding: 185px 0px;
+}
+.sjf-login-wrap .login-title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.sjf-login-wrap .search-login {
+  width: 665px;
+  min-height: 555px;
+  margin: 0 auto;
+}
+.sjf-login-wrap .search-login input[type="text"] {
+  height: 88px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #e3e3e3;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 18px;
+}
+
+.check-login {
+  color: #8e8e90;
+  margin-top: 20px;
+  position: relative;
+  min-height: 40px;
+}
+.check-login .floatedLeft input[type="checkbox"] + label {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.check-login .floatedLeft input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c1c1c1;
+  position: relative;
+  top: 2px;
+}
+.check-login .floatedLeft input[type="checkbox"]label:before {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c1c1c1;
+  content: "";
+  position: absolute;
+}
+.check-login .floatedLeft input[type="checkbox"] + label:after {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  background: url("/images/main/chk-custom.png") no-repeat left -1px top -1px;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  top: 2px;
+}
+.check-login .floatedLeft input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.check-login .floatedLeft {
+  float: left;
+}
+.check-login .floatedRight {
+  float: right;
+}
+.check-login .floatedRight a {
+  color: #8e8e90;
+}
+.check-login .floatedRight li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.sjf-login-wrap .login-submit-btn {
+  border-radius: 35px;
+  width: 100%;
+  height: 70px;
+  display: block;
+  background: #fff;
+  text-align: center;
+  padding-top: 22px;
+  font-size: 22px;
+  color: #888;
+}
+.sjf-login-wrap .login-submit-btn a {
+  color: #888;
+}
+.login-sns-line {
+  width: 100%;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.login-sns-line span.sns-line {
+  color: #c1c1c1;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+  display: block;
+}
+.login-sns-line span.sns-line:before {
+  height: 1px;
+  width: 260px;
+  background: #c1c1c1;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 9px;
+}
+.login-sns-line span.sns-line:after {
+  height: 1px;
+  width: 260px;
+  background: #c1c1c1;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 9px;
+}
+
+.login-sns-line .sns-btn-wrap {
+  margin-top: 20px;
+}
+.login-sns-line .sns-btn-wrap li {
+  width: calc(50% - 22px);
+  font-weight: 400;
+  display: inline-block;
+  border-radius: 23px;
+  min-height: 53px;
+  margin: 5px 10px;
+  padding: 16px 0px;
+}
+.login-sns-line .sns-btn-wrap a li {
+  color: #fff;
+}
+.sns-btn-wrap span {
+  margin-right: 8px;
+  vertical-align: middle;
+  display: -webkit-inline-box;
+}
+
+.sns-btn-wrap a li.bg1 {
+  background-color: #3b5998 !important;
+}
+.sns-btn-wrap a li.bg2 {
+  background-color: #f4c600 !important;
+}
+.sns-btn-wrap a li.bg3 {
+  background-color: #2dab30 !important;
+}
+.sns-btn-wrap a li.bg4 {
+  background-color: #d24913 !important;
+}
+
+.hd-facebook-icon:hover {
+  background: url("../images/main/facebook-icon-on.png") no-repeat;
+}
+.hd-youtube-icon:hover {
+  background: url("../images/main/youtube-icon-on.png") no-repeat;
+}
+.hd-insta-icon:hover {
+  background: url("../images/main/insta-icon-on.png") no-repeat;
+}
+.hd-music-icon:hover {
+  background: url("../images/main/music-icon-on.png") no-repeat;
+}
+
+.hd-facebook-icon {
+  width: 5px;
+  height: 11px;
+  background: url("../images/main/facebook-icon.png") no-repeat;
+}
+.hd-youtube-icon {
+  width: 18px;
+  height: 11px;
+  background: url("../images/main/youtube-icon.png") no-repeat;
+}
+.hd-insta-icon {
+  width: 15px;
+  height: 11px;
+  background: url("../images/main/insta-icon.png") no-repeat;
+}
+.hd-music-icon {
+  width: 10px;
+  height: 11px;
+  background: url("../images/main/music-icon.png") no-repeat;
+}
+
+.ly-header .ly-hd-members ul li.hd-facebook-icon::after,
+.ly-header .ly-hd-members ul li.hd-youtube-icon::after,
+.ly-header .ly-hd-members ul li.hd-insta-icon::after,
+.ly-header .ly-hd-members ul li.hd-music-icon::after {
+  border: none;
+  border-width: 0px;
+}
+
+@media all and (max-width: 768px) {
+    .ly-header .ly-hd-members {
+        padding:0 5px;
+    }
+    .sjf-login-wrap .login-title {
+        font-size:32px;
+    }
+    .sjf-login-wrap .search-login input[type="text"] {
+        height:50px;
+        font-size:16px;
+    }
+    .sjf-login-wrap .login-submit-btn {
+        height:50px;
+        padding-top:14px;
+        font-size:18px;
+    }
+    .login-sns-line span.sns-line {
+        font-size:14px;
+    }
+    .login-sns-line .sns-btn-wrap li {
+        min-height:0px;
+        padding:10px 0px;
+    }
+  .sjf-login-wrap .search-login {
+    margin: 0px 20px;
+    width: initial;
+  }
+  .login-sns-line span.sns-line:before {
+    width: calc(40% - 25px);
+  }
+  .login-sns-line span.sns-line:after {
+    width: calc(40% - 25px);
+  }
+  .check-login .floatedRight {
+    font-size: 14px;
+  }
+  .check-login .floatedLeft {
+    font-size: 14px;
+  }
+  /*login*/
+  .sjf-login-wrap {
+    padding: 40px 0;
+  }
+  .login-sns-line .sns-btn-wrap li {
+    width: 100%;
+    margin:5px auto;
+  }
+}

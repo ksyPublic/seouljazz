@@ -1,0 +1,679 @@
+body {
+  background-color: #feedff;
+}
+.mobile-login-wrap {
+  display: none;
+}
+
+.hd-facebook-icon:hover { background:url('../images/main/facebook-icon-on.png') no-repeat; }
+.hd-youtube-icon:hover { background:url('../images/main/youtube-icon-on.png') no-repeat; }
+.hd-insta-icon:hover {  background:url('../images/main/insta-icon-on.png') no-repeat; }
+.hd-music-icon:hover {  background:url('../images/main/music-icon-on.png') no-repeat;}
+
+.hd-facebook-icon { width:5px; height:11px; background:url('../images/main/facebook-icon.png') no-repeat; }
+.hd-youtube-icon { width:18px; height:11px; background:url('../images/main/youtube-icon.png') no-repeat; }
+.hd-insta-icon { width:15px; height:11px; background:url('../images/main/insta-icon.png') no-repeat; }
+.hd-music-icon { width:10px; height:11px; background:url('../images/main/music-icon.png') no-repeat; }
+
+.ly-header .ly-hd-members ul li.hd-facebook-icon::after, .ly-header .ly-hd-members ul li.hd-youtube-icon::after, .ly-header .ly-hd-members ul li.hd-insta-icon::after, 
+.ly-header .ly-hd-members ul li.hd-music-icon::after {
+    border: none;
+    border-width:0px;
+}
+.ly-hd-menu ul.in-none li.none.mb-dis { display: none;}
+
+.ov-bg2 {
+  background: #000;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 9999;
+  position: fixed;
+  display: block;
+  transition: all 0.5s ease;
+}
+body.dark {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#sidenav {
+  display: none;
+}
+
+.ly-header {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.ly-header .ly-hd-members {
+  display: block;
+  padding: 0 50px;
+  height: 30px;
+}
+
+.ly-header .ly-hd-members ul {
+  text-align: right;
+  font-size: 12px;
+}
+
+.ly-header .ly-hd-members ul li {
+  text-align: left;
+  display: inline-block;
+  margin: 8px 2px;
+}
+
+.ly-header .ly-hd-members ul li a {
+  color: #747474;
+}
+
+.ly-header .ly-hd-members ul li a:hover {
+  color: #222;
+}
+
+.ly-header .ly-hd-members ul li:nth-child(4)::after,
+.ly-header .ly-hd-members ul li:nth-child(5)::after,
+.ly-header .ly-hd-members ul li:nth-child(6)::after,
+.ly-header .ly-hd-members ul li:nth-child(7)::after {
+  border: none;
+  margin: 0;
+}
+
+.ly-header .ly-hd-members ul li::after {
+  content: "";
+  display: inline-block;
+  border-color: #bcbcbc;
+  border-style: solid;
+  border-width: 0.5px;
+  margin-left: 5px;
+  height: 9px;
+}
+
+/* 메인 로고 start */
+
+.ly-hd-logo {
+  padding-top: 10px;
+  height: 125px;
+  transition: top 0.2s ease-in-out;
+}
+
+.h_scroll {
+  display: none;
+}
+
+.h_scroll2 {
+  display: block;
+}
+
+.ly-hd-logo ul li:first-child img {
+  position: relative;
+  display: inherit;
+  padding-top: 25px;
+  float: left;
+}
+
+.ly-hd-logo ul li:last-child img {
+  position: relative;
+  display: inherit;
+  padding-top: 25px;
+  float: right;
+}
+
+.ly-hd-logo ul li {
+  width: 33.3333%;
+  float: left;
+  text-align: center;
+}
+
+/* 메인 메뉴 */
+.ly-hd-menu {
+  height: 80px;
+}
+
+.ly-hd-menu ul.in-none {
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: -0.005em;
+  padding-top: 30px;
+}
+
+.ly-hd-menu ul.in-none li.none {
+  display: inline-block;
+  margin-left: 7.3%;
+}
+.ly-hd-menu ul > li.none:first-child {
+  margin: 0;
+}
+.ly-hd-menu ul > li.none:last-child {
+}
+
+.ly-hd-menu ul li a {
+  color: #4a4a4a;
+}
+
+/*메뉴바 모바일 & pc 호환 */
+
+.navigation {
+  background: #fff;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 0px;
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  color: #d966a5;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+}
+
+nav ul li ul li {
+  min-width: 128px;
+}
+
+nav ul li ul li a {
+  text-align: center;
+  padding: 10px 0 10px 0px;
+  line-height: 20px;
+}
+
+nav ul li ul li::after {
+  height: 1px;
+  content: "";
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60%;
+  background: #e3e3e3;
+  left: 25px;
+  top: 40px;
+}
+
+nav ul li ul li:last-child::after {
+  display: none;
+}
+
+.nav-dropdown {
+  position: absolute;
+  width: 130px;
+  background: #fff;
+  display: none;
+  border: 1px solid #e3e3e3;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+#drop1 {
+  right: -30px;
+}
+
+#drop3 {
+  right: -30px;
+}
+
+#drop4 {
+  right: 20px;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  height: 40px;
+  width: 45px;
+}
+#nav-toggle {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+  cursor: pointer;
+  padding: 10px 35px 10px 3px;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 30px;
+  border-radius: 10px;
+  background: #000;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+  top: -8px;
+}
+
+#nav-toggle span:after {
+  bottom: -8px;
+}
+
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+  top: 0;
+}
+
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+#sidenav {
+  position: absolute;
+  right: 35px;
+  top: 75px;
+  cursor: pointer;
+  padding: 10px 35px 10px 3px;
+}
+
+#sidenav span.btn-x {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 50px;
+  border-radius: 10px;
+  background: #000;
+  position: absolute;
+  display: block;
+  content: "";
+  transform: rotate(45deg);
+}
+
+#sidenav span.btn-x2 {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 50px;
+  border-radius: 10px;
+  background: #000;
+  position: absolute;
+  display: block;
+  content: "";
+  transform: rotate(-45deg);
+}
+
+/* article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+} */
+
+/* 모바일 미디어 쿼리 */
+
+@media all and (max-width: 1620px) {
+  /* .notice_list li { 
+          padding: 10px 40px 10px 40px ;
+      }
+      .notice_list li a { 
+          font-size:20px;
+      } */
+  /* .ly-poster-cont {
+    padding-top: 40px;
+  } */
+
+  .ly-hd-menu ul.in-none li.none {
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+
+  /* .ly-hd-menu ul > li.none:first-child {
+        margin-left:20px;
+      }
+      .ly-hd-menu ul > li.none:last-child {
+        margin-right:20px;
+      } */
+}
+@media all and (max-width: 1240px) {
+  .ly-hd-menu ul.in-none {
+    font-size: 16px;
+    max-width: 1250px;
+    margin: 0 auto;
+    color: #fff;
+    /* display:flex; */
+    position: relative;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  /*모바일 로그인*/
+  .ly-hd-menu ul.in-none li.none.mb-dis { display: block;}
+  .mobile-login-wrap {
+    display: block;
+    color: #333;
+    position: absolute;
+    top:20px; right:10px;
+  }
+  .mobile-login-wrap ul {
+    display: block;
+    position: relative;
+  }
+  .mobile-login-wrap ul li {
+    display: inline-block;
+  }
+  li.moblie-login-btn {
+    width: 19px;
+    height: 16px;
+    margin-left:5px;
+    background:url("/images/main/mobile-login-off.png") no-repeat;
+  }
+
+  li.moblie-login-btn:hover {
+    background:url("/images/main/mobile-login-on.png") no-repeat;
+  }
+
+  li.moblie-logout-btn {
+    width: 19px;
+    height: 16px;
+    margin-left:5px;
+    background:url("/images/main/mobile-logout-off.png") no-repeat;
+  }
+
+  li.moblie-logout-btn:hover {
+    background:url("/images/main/mobile-logout-on.png") no-repeat;
+  }
+
+  li.moblie-signup-btn {
+    width: 19px;
+    height: 16px;
+    margin-left:5px;
+    background:url("/images/main/mobile-signup.png") no-repeat;
+  }
+
+  li.moblie-signup-btn:hover {
+    background:url("/images/main/mobile-signup-on.png") no-repeat;
+  }
+
+  li.moblie-changeinfo-btn {
+    width: 19px;
+    height: 16px;
+    margin-left:5px;
+    background:url("/images/main/mobile-change-off.png") no-repeat;
+  }
+
+  li.moblie-changeinfo-btn:hover {
+    background:url("/images/main/mobile-change-on.png") no-repeat;
+  }
+
+  ul#drop5.nav-dropdown {
+    padding-left:0px;
+    display: inline-block;
+    width:inherit;
+    padding:0px 0px 10px;
+  }
+
+  ul#drop5.nav-dropdown li { display: inline-block; min-width:inherit;}
+
+  ul#drop5.nav-dropdown li.facebook-moblie-btn { width:30px; height:30px; background:url("/images/main/facebook_mb_btn.png") no-repeat; }
+  ul#drop5.nav-dropdown li.insta-moblie-btn { width:30px; height:30px; margin-left:8px; background:url("/images/main/insta_mb_btn.png") no-repeat; }
+  ul#drop5.nav-dropdown li.youtube-moblie-btn { width:30px; height:30px; margin-left:8px; background:url("/images/main/youtube_mb_btn.png") no-repeat; }
+  ul#drop5.nav-dropdown li.appMusic-moblie-btn { width:30px; height:30px; margin-left:8px; background:url("/images/main/insta_mb_btn.png") no-repeat; }
+
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    height: 40px;
+    width: 45px;
+  }
+
+  #sidenav {
+    display: block;
+  }
+
+  /*메인*/
+  .ly-header .ly-hd-members {
+    display: none;
+  }
+  #fix-nav {
+    top: 16.5%;
+  }
+
+  #nav-toggle {
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    cursor: pointer;
+    padding: 10px 35px 10px 3px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    background: #000;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+
+  #nav-toggle span:before {
+    top: -12px;
+  }
+
+  #nav-toggle span:after {
+    bottom: -12px;
+  }
+
+  .page_cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul li {
+    float: none;
+  }
+
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+
+  .nav-dropdown {
+    position: static;
+    margin-top: 0px;
+    box-shadow: none;
+    padding-left: 75px;
+    border: 0;
+  }
+
+  .ly-hd-menu ul.in-none {
+    display: block;
+    padding-top: 0px;
+    position: fixed;
+    min-width: 200px;
+    right: -200px;
+    transition: 0.4s;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    -webkit-box-shadow: -7px 2px 19px -9px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: -7px 2px 19px -9px rgba(0, 0, 0, 0.85);
+    box-shadow: -7px 2px 19px -9px rgba(0, 0, 0, 0.85);
+  }
+  .ly-hd-menu ul.in-none li.none {
+    transition: all 0.4s ease;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .ly-hd-menu ul.in-none > li:first-child {
+    margin-top: 120px;
+  }
+
+  .ly-hd-logo {
+    padding-top: 0;
+    height: 125px;
+  }
+
+  nav ul li ul li::after {
+    display: none;
+  }
+
+  .ly-hd-logo ul li:first-child {
+    display: none;
+  }
+
+  .ly-hd-logo ul li:nth-child(2) {
+    width: 120px;
+    padding-top: 25px;
+    margin-left: 50px;
+    position: relative;
+    text-align: center;
+  }
+
+  /* .ly-hd-logo ul li:nth-child(2) img {
+        max-width: 20%;
+    } */
+
+  .ly-hd-logo ul li:last-child {
+    display: none;
+  }
+
+  .ly-hd-menu {
+    height: 0;
+  }
+}
+
+@media all and (min-width: 1065px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .ly-hd-logo ul li:nth-child(2) {
+    width: 85px;
+    padding-top: 12px;
+    margin-left: 20px;
+  }
+
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    height: 40px;
+    width: 45px;
+  }
+
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 3px;
+    width: 30px;
+    border-radius: 10px;
+    background: #000;
+    position: absolute;
+    display: block;
+    content: "";
+    transition: all 300ms ease-in-out;
+  }
+
+  #nav-toggle span:before {
+    top: -8px;
+  }
+
+  #nav-toggle span:after {
+    bottom: -8px;
+  }
+
+  .ly-hd-logo {
+    padding-top: 0;
+    height: 80px;
+  }
+
+  #fix-nav {
+    display: none;
+  }
+
+  .ly-contents.fp-auto-height {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .ly-contents-new {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
